@@ -1,24 +1,22 @@
-# plugins
+# h-plugins (vue)
 
-## Project setup
+## h-plugins
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+自己的插件库
 ```
 
-### Compiles and minifies for production
+## 安装
 ```
-yarn build
+yarn add h-plugins
+npm i h-plugins
 ```
-
-### Lints and fixes files
+## 项目引入
 ```
-yarn lint
+入口文件引入
+import *** from "h-plugins";
+import "h-plugins/dist/h-plugin.css";
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 页面使用 tab切换
+```
+<h-tabs v-model="active" :tabList="list"></h-tabs>
+```

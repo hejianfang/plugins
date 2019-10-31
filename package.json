@@ -1,14 +1,18 @@
 {
-  "name": "plugins",
-  "version": "0.1.0",
-  "private": true,
+  "name": "h-plugins",
+  "version": "0.1.2",
+  "private": false,
+  "main": "dist/h-plugin.umd.js",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name h-plugin --dist lib src/plugins/index.js"
   },
   "dependencies": {
     "core-js": "^3.3.2",
+    "h-plugins": "^0.1.1",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3"
   },
@@ -25,6 +29,8 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "prettier": "^1.18.2",
+    "style-resources-loader": "^1.2.1",
+    "vue-cli-plugin-style-resources-loader": "^0.1.3",
     "vue-template-compiler": "^2.6.10"
   }
 }

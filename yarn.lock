@@ -3765,6 +3765,15 @@ gzip-size@^5.0.0:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
+h-plugins@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/h-plugins/download/h-plugins-0.1.1.tgz?cache=0&sync_timestamp=1572508080221&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fh-plugins%2Fdownload%2Fh-plugins-0.1.1.tgz#f619f4ada0a9766bcaa7d6b1aa7d14670530ef85"
+  integrity sha1-9hn0raCpdmvKp9axqn0UZwUw74U=
+  dependencies:
+    core-js "^3.3.2"
+    vue "^2.6.10"
+    vue-router "^3.1.3"
+
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/handle-thing/download/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
@@ -7409,6 +7418,17 @@ strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   resolved "https://registry.npm.taobao.org/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
+style-resources-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/style-resources-loader/download/style-resources-loader-1.2.1.tgz#7679d5dc2f27046b2fc2b83c1d5b6c1b8a9b820c"
+  integrity sha1-dnnV3C8nBGsvwrg8HVtsG4qbggw=
+  dependencies:
+    glob "^7.1.2"
+    is-callable "^1.1.4"
+    is-plain-object "^2.0.4"
+    is-promise "^2.1.0"
+    loader-utils "^1.1.0"
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/stylehacks/download/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -7918,6 +7938,11 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha1-vXbWojMj4sqP+hICjcBFWcdfkBk=
+
+vue-cli-plugin-style-resources-loader@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npm.taobao.org/vue-cli-plugin-style-resources-loader/download/vue-cli-plugin-style-resources-loader-0.1.3.tgz#0fed01f429ba4af2f4265161dbeab9e9d233e810"
+  integrity sha1-D+0B9Cm6SvL0JlFh2+q56dIz6BA=
 
 vue-eslint-parser@^5.0.0:
   version "5.0.0"
