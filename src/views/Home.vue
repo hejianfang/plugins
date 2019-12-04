@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <button @click="$exportSavePdf('标题')">导出</button>
+    <div id="pdfCentent">
+      123
+    </div>
     <h-tabs v-model="active" :tabList="list"></h-tabs>
   </div>
 </template>
