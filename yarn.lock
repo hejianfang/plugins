@@ -3854,6 +3854,29 @@ gzip-size@^5.0.0:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
+h-plugins@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npm.taobao.org/h-plugins/download/h-plugins-0.1.3.tgz?cache=0&sync_timestamp=1575454477386&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fh-plugins%2Fdownload%2Fh-plugins-0.1.3.tgz#5fb15c1225cd99d7913ea72e326e50b2934a0946"
+  integrity sha1-X7FcEiXNmdeRPqcuMm5QspNKCUY=
+  dependencies:
+    core-js "^3.3.2"
+    html2canvas "^1.0.0-rc.5"
+    jspdf "^1.5.3"
+    vue "^2.6.10"
+    vue-router "^3.1.3"
+
+h-plugins@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npm.taobao.org/h-plugins/download/h-plugins-0.1.5.tgz?cache=0&sync_timestamp=1575455533974&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fh-plugins%2Fdownload%2Fh-plugins-0.1.5.tgz#861072ed26e70769d26208c07a44bcc971eef73b"
+  integrity sha1-hhBy7SbnB2nSYgjAekS8yXHu9zs=
+  dependencies:
+    core-js "^3.3.2"
+    h-plugins "^0.1.3"
+    html2canvas "^1.0.0-rc.5"
+    jspdf "^1.5.3"
+    vue "^2.6.10"
+    vue-router "^3.1.3"
+
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/handle-thing/download/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"

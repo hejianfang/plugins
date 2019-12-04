@@ -1,6 +1,6 @@
 {
   "name": "h-plugins",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "private": false,
   "main": "dist/h-plugin.umd.js",
   "license": "MIT",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "core-js": "^3.3.2",
+    "h-plugins": "^0.1.5",
     "html2canvas": "^1.0.0-rc.5",
     "jspdf": "^1.5.3",
     "vue": "^2.6.10",

@@ -9,6 +9,7 @@
 import upperFirst from "lodash/upperFirst";
 import camelCase from "lodash/camelCase";
 const requireComponent = require.context("./plugin", true, /\.vue$/);
+const requireCommon = require.context("./commonJs", false, /.js$/);
 const install = Vue => {
   if (install.installed) return;
   install.installed;
@@ -20,6 +21,11 @@ const install = Vue => {
     let name =
       "h-" + componentName.slice(0, 1).toLowerCase() + componentName.slice(1);
     Vue.component(name, componentConfig.default || componentConfig);
+  });
+  requireCommon.keys().forEach(r => {
+    let name = r.replace(/^\.\//, "").replace(/\.\w+$/, "");
+    let commonName = "$" + [name];
+    Vue.prototype[commonName] = requireCommon(r).default;
   });
 };
 
