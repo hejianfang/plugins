@@ -15,7 +15,7 @@ npm i h-plugins
 入口文件引入
 import *** from "h-plugins";
 import "h-plugins/dist/h-plugin.css";
-Vue.use(h-plugins)
+Vue.use(***)
 ```
 ## 页面使用 tab切换
 ```
@@ -42,6 +42,10 @@ id = pdfCentent 是导出的dom是必填项，不写会出错
    </tr>
 </table>
 $exportTable 接收三个参数，导出表格的名称，每列的宽度，以及多少列
-默认名字是‘模板’，默认列数为10列，每列宽度默认200px
-id = table 是导出的dom是必填项.
+
+默认名字是‘模板’，默认列数为10列，每列宽度默认200px。
+
+id = table 是导出的dom是必填项。
+
+如果有需要隐藏的单元格，在这个单元格加 class="none", 导出的表格会隐藏该单元格
 ```
