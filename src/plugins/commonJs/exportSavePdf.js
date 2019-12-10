@@ -17,7 +17,8 @@ const exportSavePdf = title => {
     logging: true,
     dpi: window.devicePixelRatio * 2,
     width: element.offsetWidth,
-    height: element.offsetHeight
+    height: element.offsetHeight,
+    scrollY: 0
   };
   c.width = element.offsetWidth * 4;
   c.height = element.offsetHeight * 4;
