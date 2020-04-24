@@ -9,7 +9,7 @@
 import html2Canvas from "html2canvas";
 import JsPDF from "jspdf";
 const exportSavePdf = title => {
-  let element = document.getElementById("pdfCentent");
+  let element = document.getElementById("pdfContent");
   let c = document.createElement("canvas");
   let opts = {
     scale: 2,
