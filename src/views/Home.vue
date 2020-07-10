@@ -5,9 +5,7 @@
       123
     </div>
     <h-tabs v-model="active" :tabList="list"></h-tabs>
-    <button @click="$router.push('/table')">
-      表格页
-    </button>
+    <button @click="$router.push('/table')">表格页</button>
     <h-hTable
       :data="list"
       :thData="['标题']"
