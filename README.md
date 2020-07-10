@@ -80,10 +80,12 @@ id = table 是导出的dom是必填项。
 ## pc端瀑布流布局计算方法
 ```
 html部分 示例
-    <div id="waterWrap" class="waterWrap" :style="{ width: waterWidth }">
-      <ul v-for="(w, i) in waterList" :key="i">
-        <li v-for="(item, index) in w" :key="index">{{ item.name }}</li>
-      </ul>
+    <div id="waterWrap">
+      <div class="waterWrap" :style="{ width: waterWidth }">
+        <ul v-for="(w, i) in waterList" :key="i">
+          <li v-for="(item, index) in w" :key="index">{{ item.name }}</li>
+        </ul>
+      </div>
     </div>
 js部分  示例
     data() {

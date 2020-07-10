@@ -29,7 +29,7 @@ const waterFall = (
       column = column - 1;
     }
     // column 列数 动态生成二维数组
-    let width = null;
+    let width;
     width = column * parseInt(itemWidth) + (column - 1) * parseInt(grid);
     let targetArr = [];
     for (let i = 0; i < column; i++) {

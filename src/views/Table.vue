@@ -9,10 +9,12 @@
     <!--    <td>1</td>-->
     <!--  </tr>-->
     <!--</table>-->
-    <div id="waterWrap" class="waterWrap" :style="{ width: waterWidth }">
-      <ul v-for="(w, i) in waterList" :key="i">
-        <li v-for="(item, index) in w" :key="index">{{ item.name }}</li>
-      </ul>
+    <div id="waterWrap">
+      <div class="waterWrap" :style="{ width: waterWidth }">
+        <ul v-for="(w, i) in waterList" :key="i">
+          <li v-for="(item, index) in w" :key="index">{{ item.name }}</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -30,10 +32,19 @@ export default {
   },
   mounted() {
     const list = [
-      { name: "1" },
+      {
+        name:
+          "1111111112222222222233333333333333333333355424414145424145241555555555555555555"
+      },
       { name: "2" },
-      { name: "3" },
-      { name: "4" },
+      {
+        name:
+          "333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+      },
+      {
+        name:
+          "46666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666"
+      },
       { name: "5" }
     ];
     this.$waterFall(list, this);
@@ -48,16 +59,15 @@ export default {
 .Table {
   background-color: #fff;
   min-height: 100vh;
-  .waterWrap{
+  .waterWrap {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     ul {
       width: 374px;
-      li{
+      word-break: break-all;
+      li {
         margin-top: 20px;
-        height: 100px;
-        line-height: 100px;
         border: @border-d;
       }
     }
