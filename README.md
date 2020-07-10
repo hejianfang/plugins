@@ -27,6 +27,18 @@ Vue.use(HPlugins)
 ```
 <h-tabs v-model="active" :tabList="list"></h-tabs>
 ```
+## 表格table单选与反选
+isSelection是否显示复选框
+handleSelectionChange 返回选中的一行数据
+```
+    <h-hTable
+      :data="list"
+      :thData="['标题']"
+      :tdData="['name']"
+      :isSelection="true"
+      @selection-change="handleSelectionChange"
+    ></h-hTable>
+```
 
 ## pdf 导出的方法
 
@@ -60,7 +72,7 @@ id = table 是导出的dom是必填项。
 如果有需要隐藏的单元格，在这个单元格加 class="none", 导出的表格会隐藏该单元格
 ```
 
-## pc端瀑布流布局
+## pc端瀑布流布局计算方法
 ```
 html部分 示例
     <div id="waterWrap" class="waterWrap" :style="{ width: waterWidth }">

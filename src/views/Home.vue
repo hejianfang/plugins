@@ -8,6 +8,13 @@
     <button @click="$router.push('/table')">
       表格页
     </button>
+    <h-hTable
+      :data="list"
+      :thData="['标题']"
+      :tdData="['name']"
+      :isSelection="true"
+      @selection-change="handleSelectionChange"
+    ></h-hTable>
   </div>
 </template>
 
@@ -29,6 +36,10 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {
+    handleSelectionChange(list) {
+      console.log(list);
+    }
+  }
 };
 </script>
