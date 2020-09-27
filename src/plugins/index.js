@@ -8,8 +8,15 @@
  */
 import upperFirst from "lodash/upperFirst";
 import camelCase from "lodash/camelCase";
+<<<<<<< HEAD
 const requireComponent = require.context("./plugin", true, /\.vue$/);
 const requireCommon = require.context("./commonJs", false, /.js$/);
+=======
+
+const requireComponent = require.context("./plugin", true, /\.vue$/);
+const requireCommon = require.context("./commonJs", false, /.js$/);
+console.log(requireCommon);
+>>>>>>> cpf
 const install = Vue => {
   if (install.installed) return;
   install.installed;
