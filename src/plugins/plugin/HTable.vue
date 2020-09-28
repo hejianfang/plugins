@@ -73,7 +73,7 @@ export default {
   watch: {
     mainCheckboxMsg(val) {
       if (val) {
-        this.$emit('selection-change', val)
+        this.$emit("selection-change", val);
       }
     }
   }

@@ -152,7 +152,7 @@ export default {
     },
     show(newV) {
       if (newV) {
-        this.$nextTick(_ => {
+        this.$nextTick(() => {
           let _dom = document.getElementById("hevue-wrap");
           _dom.onmousewheel = this.scrollFunc;
           // 火狐浏览器没有onmousewheel事件，用DOMMouseScroll代替
@@ -168,7 +168,7 @@ export default {
               // this.url = this.imgList[this.imgIndex]
               this.changeUrl(this.imgList[this.imgIndex], this.imgIndex);
             } else {
-              console.error("imgList 为空或格式不正确");
+              // console.error("imgList 为空或格式不正确");
             }
           } else {
             this.changeUrl(this.url);
@@ -318,8 +318,8 @@ export default {
     },
     // 键盘事件
     keyHandle(e) {
-      var e = window.event || e;
-      var key = e.keyCode || e.which || e.charCode;
+      const el = window.event || e;
+      const key = el.keyCode || el.which || el.charCode;
       switch (key) {
         case 27: // esc
           this.close();
