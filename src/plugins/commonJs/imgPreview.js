@@ -27,8 +27,7 @@ const Toast = (options = {}) => {
   }
   instance.mainBackground = options.mainBackground || "rgba(255,255,255,.6)";
   instance.controlColor = options.controlColor;
-  instance.controlBackground =
-    options.controlBackground || "rgba(109, 109, 109, .6)";
+  instance.controlBackground = options.controlBackground || "rgba(109, 109, 109, .6)";
   instance.closeColor = options.closeColor || "rgba(109, 109, 109, .6)";
   instance.multiple = options.multiple;
   instance.nowImgIndex = options.nowImgIndex;
