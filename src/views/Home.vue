@@ -1,6 +1,12 @@
 <template>
   <div class="home">
     <button @click="$exportSavePdf('标题')">导出</button>
+    <div
+      v-waterMarker="{
+        text: 'lzg版权所有',
+        textColor: 'rgba(180, 180, 180, 0.4)'
+      }"
+    ></div>
     <div id="pdfCentent">
       123
     </div>
@@ -13,6 +19,7 @@
       :isSelection="true"
       @selection-change="handleSelectionChange"
     ></h-hTable>
+    <button v-copy="copyText">复制</button>
   </div>
 </template>
 
@@ -31,7 +38,8 @@ export default {
         { name: "标题6", key: 6 },
         { name: "标题7", key: 7 },
         { name: "标题8", key: 8 }
-      ]
+      ],
+      copyText: "a copy directives"
     };
   },
   methods: {

@@ -120,3 +120,82 @@ css部分 示例
           }
         }
 ```
+****
+## 自定义指令
+```
+复制粘贴指令 v-copy
+<template>
+  <button v-copy="copyText">复制</button>
+</template>
+<script> export default {
+    data() {
+      return {
+        copyText: 'a copy directives',
+      }
+    },
+  }
+</script>
+```
+```
+长按指令 v-longpress
+<template>
+  <button v-longpress="longpress">长按</button>
+</template>
+<script> 
+export default {
+  methods: {
+    longpress () {
+      alert('长按指令生效')
+    }
+  }
+} 
+</script>
+```
+```
+输入框防抖指令 v-debounce
+<template>
+  <button v-debounce="debounceClick">防抖</button>
+</template>
+
+<script> 
+export default {
+  methods: {
+    debounceClick () {
+      console.log('只触发一次')
+    }
+  }
+} 
+</script>
+```
+```
+禁止表情及特殊字符 v-emoji
+<template>
+  <input type="text" v-model="note" v-emoji />
+</template>
+```
+```
+图片懒加载 v-LazyLoad
+<img v-LazyLoad="xxx.jpg" />
+```
+```
+权限校验指令 v-premission
+<div class="btns">
+  <!-- 显示 -->
+  <button v-permission="'1'">权限按钮1</button>
+  <!-- 不显示 -->
+  <button v-permission="'10'">权限按钮2</button>
+</div>
+```
+```
+实现页面水印 v-waterMarker
+<template>
+  <div v-waterMarker="{text:'lzg版权所有',textColor:'rgba(180, 180, 180, 0.4)'}"></div>
+</template>
+```
+```
+拖拽指令 v-draggable
+<template>
+  <div class="el-dialog" v-draggable></div>
+</template>
+```
+

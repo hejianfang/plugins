@@ -11,6 +11,7 @@ import camelCase from "lodash/camelCase";
 
 const requireComponent = require.context("./plugin", true, /\.vue$/);
 const requireCommon = require.context("./commonJs", false, /.js$/);
+const requireDirectives = require.context("./directives", true, /.js$/);
 const install = Vue => {
   if (install.installed) return;
   install.installed;
@@ -27,6 +28,10 @@ const install = Vue => {
     let name = r.replace(/^\.\//, "").replace(/\.\w+$/, "");
     let commonName = "$" + [name];
     Vue.prototype[commonName] = requireCommon(r).default;
+  });
+  requireDirectives.keys().forEach(directives => {
+    let name = directives.replace(/^\.\//, "").replace(/\.\w+$/, "");
+    Vue.directive(name, requireDirectives(directives).default);
   });
 };
 
