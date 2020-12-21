@@ -18,7 +18,7 @@
       :tdData="['name']"
       :isSelection="true"
       @selection-change="handleSelectionChange"
-    ></h-hTable>
+    ></h-htable>
     <button v-copy="copyText">复制</button>
   </div>
 </template>

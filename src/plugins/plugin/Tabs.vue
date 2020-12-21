@@ -32,9 +32,10 @@ export default {
       componentUpdated(el) {
         let liList = el.getElementsByTagName("li");
         let index = [...liList].findIndex(i => i.className === "isActive");
-        let lisetWidth = [...liList][index].offsetWidth;
+        let listWidth = [...liList][index].offsetWidth;
+        let listLeft = [...liList][index].offsetLeft;
         const from = el.scrollLeft;
-        let to = lisetWidth * (index + 1) - (lisetWidth + el.offsetWidth) / 2;
+        let to = listLeft - (el.offsetWidth - listWidth) / 2;
         let count = 0;
         const frames = Math.round((0.3 * 1000) / 16);
         let animate = () => {
