@@ -1,6 +1,6 @@
 {
     "name": "h-plugins",
-    "version": "0.1.95",
+    "version": "0.2.01",
     "private": false,
     "main": "dist/h-plugin.umd.js",
     "license": "MIT",
