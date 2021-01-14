@@ -10,6 +10,7 @@
 4，table 导出 xlsx 的方法
 5，pc端瀑布流布局计算方法
 6，自定义指令
+7，多浏览器滚动条样式优化
 ```
 
 ## 安装
@@ -200,3 +201,20 @@ export default {
 </template>
 ```
 
+## 多浏览器滚动条样式优化
+![GitHub set up](./src/assets/imgs/scroll.jpg "优化后")
+```
+ <h-hScroll color="rgba(0,0,0,0.2)">
+  <div>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+  </div>
+  </h-hScroll>
+```
