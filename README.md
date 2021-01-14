@@ -203,7 +203,7 @@ export default {
 ```
 
 ## 多浏览器滚动条样式优化
-![GitHub set up](./src/assets/imgs/scroll.jpg "优化后")
+![GitHub set up](https://github.com/hejianfang/plugins/blob/master/src/assets/imgs/scroll.jpg "优化后")
 ```
  <h-hScroll color="rgba(0,0,0,0.2)">
   <div>
