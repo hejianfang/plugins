@@ -1,4 +1,5 @@
 # h-plugins (vue)
+欢迎阅读 [GitHub源码](https://github.com/hejianfang/plugins "hejianfang")
 
 ## h-plugins
 
